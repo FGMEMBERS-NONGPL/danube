@@ -1,0 +1,540 @@
+Entire runabout model with instruments Totals: 28396 vertices, 20348 polygons or 34361 triangles, 421 objects
+ (235 objects animated by moving, flashing, or changing textures, excluding livery choices)
+
+Version# Vertices PolygonFaces Comments
+2014.Feb.04
+41.6		no change to models
+	Rewrite lighting functions and optimization of nasal.
+	FIX bug when walking, or jumping back inside.
+	Rewrite interface between inside and outside walking.
+
+2014.Feb.02
+41.53		no change to models
+	Change key for Configuration dialog from Tab to Equal, for compliance with FG 3.0
+
+2012.Mar.06
+41.52	Remove ATC chatter at startup (introduced in FG 2.4)
+
+2011.May.27
+41.51	Add version information to splash screen.
+
+2011.Jan.05
+41.5	27472	20079	replace danube.ac
+	Fix 2 places on hull with wrong livery color.
+	Add 1 black-tone livery color, and
+	Add white lettering insignia for dark livery.
+
+2009.Dec.20
+41.43		no change to models
+	Adjust nacelle glow.
+	Add conditions to display of text messages.
+
+2009.Jul.12
+41.4	27472	20079	replace danube.ac and nav-sphere
+	Fix nav sphere size to scale at different field-of-view.
+	Replace solid starfleet-arrow insignia with texture.
+
+2009.Jul.09
+41.3	Add new sphere model to increase visibility range for nav lights.
+	Add Waldo Walker to tracking display.
+	Fix initialization of tracking display to remember units preference.
+	Add trigger detail to walker animation dialog.
+	Fix shape of Waldo's head.
+	Fix timeout delay for popup info box.
+
+2009.Jun.29
+41.2		no change to models
+	Fix bug when walker steps out underground.
+	Consolidate some aircraft specific sections for walker.
+	Remove alpha from splash image.
+
+2009.May.20
+41.1		no change to model
+	FIX: Walker can walk under bridges.
+	     Requires CVS build after 2009.Mar.18
+	FIX: Hover up to reset after hard landing.
+	Add falling without parachute.
+
+2009.May.19
+41.0	27772	20350	new danube model
+	Separate hull objects into separate colors for livery.
+	Add external materials to livery.
+	Fix bug in corner of warp sled.
+	Smooth corners of nacelles and warp sled.
+
+40.1	remove redundant lighting object from danube
+	Simplify some lighting calculations.
+	Remove orphaned properties.
+	Fix some material diffuse properties that were overlooked.
+
+2009.May.17
+40.0	26586	20368	new danube model
+	Separate interior objects into new shadow lighting layout.
+	Fix rotation of tracking text display.
+
+39.5		no change to models
+	Restrict tracking text visibility to cockpit view.
+	Fix bug for when tracking is shown.
+	Remove need to manually edit which version of FlightGear is being run for ambient and emission levels.
+	Restructure ambient and emission properties for interior lighting.
+	Dim LCARS panels after dark.
+	Change particle spray pattern from dust.
+
+2009.May.12
+39.41	Add missing file to multiplayer package
+	  provides support to show danube-01 running in 1.0
+
+2009.Apr.11
+39.4	25396	20208	change all .ac models
+	Fix ambient values to match rgb colors.
+	Change ambient and emission levels to match new lighting levels in Development CVS.
+	Add hover control to middle mouse button.
+	Remove hidden polys from, and clean up warp core cover.
+	Fix bug in transporter pad lighting.
+	Fix warp core nav lights tied to nav lights.
+	Fix landing lights center.
+	Adjust deceleration upon skidding of unpowered landing.
+
+2009.Mar.07
+39.3	25469	20500	change danube model
+	Move nose windows to be level to each other,
+	 and have correct angle to interior.
+	Reshape side consoles to have correct angle and surface under windows.
+	Reshape pylon wings rear surface.
+	Retexture top rear of pylon wings.
+	Remove duplicate window in ai model.
+	Remove non-canon texture from nacelles.
+	Integrate bussard glow into one object.
+	Remove extra dots from background of splash screen.
+
+2009.Feb.28
+39.21	26316	21281	minor fix to danube model
+	Adjust shape of pylon at rear of nacelle.
+	Adjust window transparancy.
+	Restore relative location of strobes.
+
+2009.Feb.27
+39.2	26321	21299	change danube model and texture mapping
+	Remove NCC-73121 poly mesh and replace with texture logo.
+	Remove engine grille texture and replace with mesh grille.
+	Add navigational deflector.
+	Reduce hidden polys in nacelles.
+	Add texture to body sides.
+	Add registry names.
+	Add sending of registry across multiplayer.
+	Fix location of nose beacon.
+
+2009.Feb.22
+39.11	27047	21922	minor fixes to danube model
+	remove more hidden polys, (found while working on low-poly multiplayer model)
+
+2009.Feb.20
+39.1	27264	22722	update danube model
+	Add timer to reduce particle drain after crash.
+	Add animation settings to aircraft-save preferences.
+	Recalculate door timings.
+	Fix several more holes in mesh.
+	Fix walking into (new) inside corner.
+
+2009.Feb.19
+39.0	27293	22850	replace danube model
+	Reshape and resize nose hull, body hull, and both hatches.
+	Resize wings and nacelle placement.
+	Add texturing detail to hull.
+	Add decal stripe.
+	Recolor hull for pattern and texture.
+	Color transporter emitters.
+	Fix old hole in left pylon.
+	Reduce poly count by finding more areas to cleanup or simplify.
+	Change one property for multiplayer.
+	Fix saving livery settings.
+	Fix effects locations.
+
+2009.Feb.05
+38.2	minor cleanup and optimization
+	Change to listener callback functions.
+	Update pilot dialog to newest animation code.
+	Convert images to PNG and remove support for 0.9.10 and 1.0
+
+2009.Feb.05
+38.11	===== Legacy version for 0.9.10 and 1.0 =====
+	Fix several bugs affecting 0.9.10 and 1.0
+	  Some were in combinations of walking positions
+	  and animation defects.
+	Several minor cleanup and optimization of nasal.
+	Add new animation choice for standing still.
+	Remove osg specific files and branch off the older support.
+
+2009.Feb.03
+38.1	27216	25828	minor fix to danube model, replace waldo walker
+	Remove duplicate lighting fixture.
+	Add wildfire ignition upon crash.
+	Fix particle triggers and locations.
+	Reduce the crash smoke density.
+	Add help and basic tutorials for Walker animations.
+	Add Animations button to primary configuration dialog.
+	Fix handling of walker locations, and inside to outside smoothness.
+	Fix some holes in Waldo's arm, and remap some texture problems.
+
+2009.Feb.02
+38.0	27224	25832	Changes to nearly everything
+	Add aircraft and airport tactical to LCARS panels.
+	  provides tracking and homing for top AI and MultiPlayer aircraft
+	  and homing to nearest airport, and selected airport.
+	Add multiplayer capabilities.
+	   (Low poly model is separate and would be placed in the AI directory)
+	   Fully supported for version 1.9 and OSG
+	Raise cockpit chair for pilot.
+	Add Waldo Walker for pilot and walker models.
+	Add parachute to walker model.
+	Improve ground detection for walker, for falling from ground objects.
+	Jump and hop down hills.
+	Add posing dialog for animating walker.
+	Add animation sequence manager.
+	Add walker orbit camera.
+	Adjust nav and strobe lights for smoother distance visibility.
+	Fix bug when jumping from an aircraft climbing or descending.
+	Scale walker speed based on hardware frame-rate, for consistant walking speed.
+	Add walking from 3rd person perspective. 
+	  Best 3rd person control, near aircraft, is from Fly-by View.
+	Change nacelle-attached to nacelle-detached so default is visible over multiplay.
+	Adjust nav and strobe lights for smoother distance visibility.
+	Rescale engineering status bar 3.
+	Redesign the interior from transporter pad back, to include mission modules.
+	  The forward module can be detached.
+	  The rear module is configured for sleeping quarters in this runabout.
+	Add venting plasma "smoke" for leaving trails.
+	Add rubbing sound for touching ground without proper vertical clearance first.
+	Add position reporting to the preferences menu.
+
+2008.Oct.29
+37.4		no change to 3d models
+	Change jumper parachute to [j]
+	Update url of my hanger to reflect change in hosting.
+
+2008.Oct.28
+37.3		no change to 3d models
+	Add vertical trajectory to walker upon exiting aircraft.
+	  (Walker should now work with aircraft with ejection seats.)
+	Walker now exits relative to aircraft pitch and roll instead
+	  of leaving at the center line.
+
+2008.Jul.26
+37.2	26299	25283	change to danube37.ac
+	Fixed rear interior door to be solid.
+	Added function to Ctrl-F for interior doors.
+	Fix external view of hover-up to be smooth again.
+	Closed up another gap in the model interior.
+
+2008.Jul.23
+37.1	26299	25279
+	Increase volume for rumble sound.
+	Make doors sound effects volume relative to view position.
+	Increase amplitude of 3 wav files.
+	Have skydiver land on face if parachute is not open.
+	Closed up a gap in the model interior.
+
+2008.Jun.04
+37.0	26301	25279	Changed Interior
+	Clean up holes around door.
+	Remake all doors and frames.
+	Add buttons to door frame.
+	Inside doors automatically open when power is on.
+	Remake transporter pad.
+	Restore original binding for ctrl-c, move "jump to helm" to alt-c
+
+2008.May.20
+36.7	24365	23944	no change to 3d models
+	Add ability to transition from outside to inside by walking through hatch.
+	Change key mappings for WASD pattern.
+	Add walk sideways left/right.
+
+2008.May.19
+36.6		no change to 3d models
+	Fix bug that got walker stuck in particular key sequence.
+	Adjust walker speed when running, and reset when landing.
+	Disable view limits.
+	Stop crawling after crash.
+
+2008.May.18
+36.5		no change to 3d models
+	Add walker. Walk outside on terrain.
+	Add boundaries for walking inside around cabin.
+	Add calculations for terminal velocity and free fall,
+	and use correct physics formulas for the path of a sky diver.
+	Add parachute for falling sky diving walker to land safely.
+	Add acceleration to hovering by keyboard controls.
+	Add running to walker when outside.
+	Fix keyboard problem with mod-up, for walker and hover functions.
+
+2008.Feb.29
+36.4		no change to 3d models
+	Remember instrumentation configuration.
+	Separate repetitive sections from nasal files.
+	Add [Ctrl]-E to jump directly to the helm position.
+
+2008.Feb.17
+36.3	24365	23944	change to danube36.ac
+	Fix maximum speed to reflect correct atmospheric boundaries.
+	Clean up all text files and separate repetitive sections.
+	Fix transparency of nav lights.
+	Change location of view from aft compartment.
+
+2008.Feb.09
+36.2	24365	23944	no change to 3d models
+	Fix bug just introduced in catching requests for engine speed.
+
+2008.Feb.08
+36.1	24365	23944	no changes to models
+	Adjust maximum speed to reflect atmospheric boundaries.
+	Fix bug in catching rapid requests for engine speed.
+	Remove cockpit yoke scripts accidentally imported from other model.
+	Fix mis-wordings in help section.
+	Join impulse emissions animation definitions.
+
+2008.Feb.05
+36.0	24365	23944	changes in two model components
+	Changed how instrument panel displays.
+	Refined hotspot and pick locations.
+	Fixed hotspot finder. [Ctrl]-C now shows all hotspots.
+	Fixed instrument panel visibility after crash.
+
+35.3	24357	23940	no changes to models
+	Door surfaces were not updating properly. Fixed.
+
+2008.Feb.04
+35.2	24357	23940	no changes to models
+	Improve dialog box buttons to insignia property connection.
+
+2008.Feb.04
+35.1	24357	23940	no changes to models
+	Fix one panel power click bug, added condition to clarify intention.
+
+2008.Feb.03
+35.0	24357	23940	changes in all model components
+	Fix long standing bug in jumping when too close to ground,
+	  change all model origins and center references.
+	Update hover and skid handling in nasal.
+	Fix responsiveness of hover up from cold start.
+	Make new controls indicator to match panel.
+	Enable rumble sound at startup.
+	Fix landing lights connection from panel to dialog button.
+	Close fracture or hole in nose hull.
+	Clean up model files.
+	Add red lighting for proper specular with sunshine.
+	Hide StarFleet Logo when livery choice is custom.
+	Add all interior surfaces to livery, make colors changable.
+
+2008.Jan.14
+34.0	24373	23969
+	Fix warp glow for osg, and improve nacelle glow overall.
+	Fix extra edge line in hull.
+	Fix walking button [w] to be repeatable so it can be held down.
+	Refine hotpot and pick spots. add buttons to instruments.
+	Compatibility with development version of Flightgear OSG:
+	  start with --aircraft=danube-osg
+
+2008.Jan.09
+33.1	24437	24001
+	Big change for walking around in direction of looking.
+
+2008.Jan.04
+33.0	24437	24001	change in instrument panel
+	Fixed several problems and improved instruments.
+	Adjust property paths for multiplayer support.
+	Add bounds checking for orbital velocities.
+	Fix crash handling and detection.
+	Fix interior lighting over-tinting.
+	Fix sound pitch for engine level.
+
+2007.Dec.31
+32.2	24437	24001	no change to 3d-model
+	Major fix for terrain following.
+	Fix minor instrument light condition checking.
+	Reorganize digital-trek instrument files for consistancy with my other models.
+	Replace instrument texture image.
+
+2007.Dec.31
+32.1	24437	24001	no change to 3d-model
+	Add left side instrument panel.
+	Add additional cockpit viewing positions.
+
+2007.Dec.30
+32.0	24437	24001
+	Update for compatibility with new release: FlightGear v1.0
+	Add instrument panel consistant with LCARS design.
+	Replace entire nasal script with newer and faster version recently developed.
+	Add livery and color setting dialogs.
+	Remember livery choice.
+	Add submodel effects for damage.
+	Add landing lights.
+	Add texture to interior flooring.
+	Compatibility with previous Flightgear version 0.9.10:
+	  start with --aircraft=danube-09
+
+2007.Jul.29
+31.2	24356	23879	no change to 3d-model
+	Update xml and nasal to add keyboard keys to change cockpit view
+	and walk around cabin.
+
+2007.Jul.01
+31.1	24356	23879	no change to 3d-model
+	Update to 1 nasal file.
+		Fix bug in popup tip not showing
+
+2007.Jun.18
+31	24356	23879
+	Update offset specifications
+	Cosmetic fixes to vertices in hull.
+	Make consistant all nav lighting. 
+		Enhance for daytime without halos and nighttime with halos.
+	Enhance strobe and beacon halos for distance and nighttime visibility.
+
+2007.Apr.29
+30.2	24239	23723	no change to 3d-model
+	Replace image files with smaller versions.
+		Splash screen, LCARS displays.
+
+2007.Apr.27
+30.1	24239	23723	no change to 3d-model
+	Update to 1 nasal file.
+		Improve yet again: hover handling, configuration dialog.
+
+2007.Apr.25
+30	24239	23723
+	Major improvements to interior.
+	including: Separated interior materials for lighting emissions.
+		Added chairs.
+		Rescaled and relocated bulkheads in front.
+		Added detail to doors.
+		Added console to rear compartment.
+		Added texture to rear windows.
+		Added walls for center compartment, for looking in windows from outside.
+		Added detail to transporter pad walls.
+	Sound mixing; Added sound effects for doors and hatches.
+	Separated hull into 5 separate objects:
+		Nose, Engine, Body, and 2 Nacelles.
+		Allow Body module to detach.
+	Crash detection, and loss of components due to damage.
+		Red alert lighting.
+	Re-calculated ground detection for hover and crash.
+		Include nose and nacelles in hover calculations.
+	Combine many flat triangles to quadrangles.
+
+2007.Mar.10
+29.1	22305	31219
+	Updated nasal scripts for dialog, sound effects, and ground/hover handling.
+2007.Feb.26
+29	22305	31219
+	Discovered the warp core does not line up with the warp core cover and
+	nacelle conduits. This explains why inside work was confusing on
+	locations. 
+	Edit top engine section and inside bulkheads to line up correctly.
+	Add lower nacelle conduit to outer wings.
+	Add cargo strap, to complement lower half already there.
+	Add lateral sensor strip.
+	Center model and re-calculate halo locations.
+	More vertices in wing cleaned up.
+
+2007.Feb.23
+28	22567	31704	(Blender skills improving beyond cleanup, now creating new additions:)
+	Reshape both nacelles, bussard collector, warp drive.
+	Move forward side windows to be more correct, closer to front.
+	Add Main Hatch, left and right. Add inside doors, bulkheads, walls,
+	cockpit panels. Reshape forward bulkhead. Add living area bunks, table.
+	Add transporter pad.
+	Add animations for doors.
+	Found more vertices to clean up in wings, engine grille, cockpit.
+	Removed hidden faces that were missed last month in rear body textures.
+	Re-color thruster pack, cockpit, adjust inside colors for flightgear.
+
+2007.Feb.15
+27	20239	30865
+	Reshape warp coil. Round nacelle rear edge.
+	Re-texture warp nacelle cover to make horizontal lines in driver coils.
+	Most changes for this release were in nasal scripting:
+	 Add sound ramping for engine. Add glow smoothing to match speed and 
+	 engine rpm.
+	 Added keyboard support, and on-screen help.
+
+2007.Feb.07
+26	20183	30789
+	Adjusted cover, cleaned up cockpit sides.
+	Added shadow, start nasal coding for ground detection and elevation.
+	Experiment with cloaking device.
+	Outside of mesh still appears as "wolfpak" made it.
+
+2007.Jan.26	First release
+25	20153	30777	Change colors. Return to single bussard. Separate impulse engine glow as separate object.
+	Add VTOL (anti-grav) to joystick.
+	Start animating glow and halos.
+
+24	20073	30630	Add texture to engine-cover. color to impulse engine.
+24	20065	30638	Start fixing engine-grille-cover
+23	19987	30512	added beaconB
+22	19922	30400	removed extra window surfaces.
+21	20082	30564	removed orphans, cleaned up many faces, wing edges done.
+21	20579	31375	cleanup appears mostly done. only wing edges remain.
+21	20658	32017	Adding LCARS panel, attempting inside lighting.
+21	20825	32364	continuing removing extra vertices. cleaned up wing surfaces.
+	Re-faced wing edge using existing vertices. Removed overlapping and reversed normals.
+
+	_____	36212	export21.ac with Mesh.NCC. loads ok!
+21	22317	36436	continuing removing extra vertices
+21	refine nacelle glows. Added 4 UV maps to inside for nacelle glows, bussard glows.
+20	24051	38370	removed excessive UV maps. Working model. transparant edge problem with UV maps when overlapping.
+20	20445	34758	without Mesh.NCC
+20	23917	38160	with Mesh.NCC (without navOn meshes)
+20b	24047	38384	importing beacon and textures, UV mapping in center. Added beacon. not centered.
+19b	20340	34626	without Mesh.NCC insignia does load.
+19	23812	38028	Append navigation lights and insignia as separate objects
+	missed rear starboard edges on line-grey
+	Fixed rear starboard edges, resume edge cleanup. Finished basic lighting.
+
+18	23809	38000	Cleaning up inside extra edges
+18	24031	39057	Cleanup vertices in wings and wing support, some on front edge.
+	remove excessive inside.
+	Completed color assignments
+
+18	24091	39183	Append warpcoil to new mesh.
+17	24239	39645	cleared rotation,scale,origin,appended blueRug as new object
+	if removeDuplicateV at 0.010, it removes 3000v. new Fa:35833 Because of change in scale. Divide 0.010 by 5. New remove# is 0.002. Exclude decal!
+	cleaned up rear top thruster pack and rear area, nacelles.
+
+16b	24235	39645	export.3ds loads ok. done wings, decal, most colors.
+	cleaned up normals and removed underside edges from decal.
+
+16	21061		export.ac SegFault11 without Mesh.NCC
+	back to 15 to fix vertices errors found in increasing duplicate radius.
+	resume fixing : nacelles, rear cubes, and inside remaing
+	resume removing duplicate vertices. coil to 0.100
+
+16	24534	40530	export.ac SegFault11
+16	24732	40722	removed duplicates to .012 and .030
+	last working copy of version 16 before 3ds corruption errors appeared.
+
+16	18486	31326	experiment removing duplicates to 0.90 (except decal-red&gold)
+    export.ac finally does not give SegFault 11, but is very messed up. Delete this tangent.
+
+15	35427	53700	resume editing vertices...
+14	41147	55137	back to before the error appeared in version 13.
+	removed duplicate vertices: 5553v 12720f
+
+13	27694	43372	removed 8157v
+	Abort version 13 because errors
+
+13	41112	55205	cleaning up vertices without deleting detail.
+12	41624	56009	cleaned up colors.
+2007.Jan.05	Back to original to keep detail. Begin Series 2
+
+09	12582	20773	Re-Imported WarpCore cover. Still some inverted normals in the wing edges.
+08	11504	18921	Removed extra detail from darkPanel layer. coil-like underside.
+07	14110	24007	Assigned vertex groups, and cleaned up orphaned edges.
+06	14091	24080	Much fixes and cleanup.
+04	17877	26311	
+03
+2006.Feb		Series 1
+2005.May.31		Begin. First attempt to load runabout into FG.
+
+2001.Sep.16
+00	41624	56009	Unedited

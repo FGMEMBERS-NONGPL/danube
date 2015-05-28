@@ -1,0 +1,101 @@
+AC3Db
+MATERIAL "WHITE_light" rgb 1 1 1  amb 1 1 1  emis 1 1 1  spec 0 0 0  shi 32  trans 0
+OBJECT world
+kids 5
+OBJECT poly
+name "Controls.Face"
+data 5
+Plane
+texture "control-lcars.png"
+texrep 1.0 1.0
+crease 30.0
+numvert 4
+0 -0.037684 -0.035172
+0 -0.037684 0.035172
+0 0.037684 0.035172
+0 0.037684 -0.035172
+numsurf 1
+SURF 0x20
+mat 0
+refs 4
+0 0.90345 0.001038
+3 0.90345 0.982081
+2 0.10361 0.982081
+1 0.10361 0.001038
+kids 0
+OBJECT poly
+name "Arrow.Left"
+data 9
+Plane.006
+texture "control-lcars.png"
+texrep 1.0 1.0
+crease 30.0
+numvert 3
+0.000747 -0.008224 -0.013812
+0.000747 -0.005117 -0.022098
+0.000747 -0.011332 -0.022098
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+0 0.036492 0.048681
+2 0.037684 0.048085
+1 0.037684 0.049277
+kids 0
+OBJECT poly
+name "Arrow.Right"
+data 9
+Plane.005
+texture "control-lcars.png"
+texrep 1.0 1.0
+crease 30.0
+numvert 3
+0.000747 -0.008004 -0.032003
+0.000747 -0.011112 -0.023717
+0.000747 -0.004897 -0.023717
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+0 0.039124 0.055643
+2 0.040312 0.055049
+1 0.040312 0.056237
+kids 0
+OBJECT poly
+name "Arrow.Top"
+data 9
+Plane.007
+texture "control-lcars.png"
+texrep 1.0 1.0
+crease 30.0
+numvert 3
+0.000747 0.035168 0.000413
+0.000747 0.028953 -0.00373
+0.000747 0.028953 0.004556
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+0 0.036406 0.057921
+2 0.037507 0.057371
+1 0.037507 0.058472
+kids 0
+OBJECT poly
+name "Arrow.Bottom"
+data 9
+Plane.001
+texture "control-lcars.png"
+texrep 1.0 1.0
+crease 30.0
+numvert 3
+0.000747 0.021818 0.00033
+0.000747 0.028032 0.004473
+0.000747 0.028032 -0.003813
+numsurf 1
+SURF 0x20
+mat 0
+refs 3
+0 0.041115 0.05309
+2 0.042186 0.052555
+1 0.042186 0.053626
+kids 0

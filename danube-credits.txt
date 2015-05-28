@@ -1,0 +1,110 @@
+Original Danube Runabout mesh by Matthew Allen 1995 (see below)
+Edited by Andrew Hodges 2001
+Edited and animated for FlightGear by Stewart Andreason 2007
+_________________________________________________________________________
+
+Runabout Mesh file.
+
+These zips files can only be distributed with this text and file and as if you follow these intructions:
+
+The Runabout Mesh file is to be used only for non-profit commercail end use.
+
+If in doubt please contact:
+
+matt@stratum-media
+wolfpak359@startrek.com
+
+This mesh file is copyright of Matthew Allen 1995,  it has been re-editied for Max in 1999 and freely distributed in MAX and 3DS formats.
+
+If you wish to place this file on another site for download,  please insure that this text files is included.
+
+To credit the author of this mesh please credit:
+
+Runabout Mesh by Matthew Allen of the wolfpak
+
+The wolfpak's URL is http://www.wolfpak359.co.uk
+
+History of mesh.
+
+Well this is an old one!  This was my first "proper" mesh before this I hab built a small vorcha class cruiser based on a micromachine I had.   For this one I biught my first trek model kit and spent 2 months taking to pieces the kit and measure it.  I built this mesh in 3d studio R3 and R4,  I got hold of R4 about halway through building it.   I used string and a ruler at this point no screen grabs were easily available for it.  This mesh features heavily in some of my first renderings as its one of the only ones I had.
+
+There are lots of mistakes on the mesh and its not a good example of building a acurate mesh.  The front bit
+is lofted and so is tha main hull,  but 99% of the rest of the detail is just bolted on boxes!  And I havn't improved at building in the last 5 years either.
+
+I have setup some simple lighting and glows for a video post render and redone the materials (no mapps!)
+
+The original mapp I used to texture this mesh came with R4 so I can't distribute it.
+
+This mesh has been seen on the web before but always creditted to the wrong author.
+
+Well now you know hwo actaully made it!
+
+Matt Allen
+Wolfpak
+
+
+_________________________________________________________________________
+
+Distributed by Andrew Hodges at startrekaustralia.com
+ Links no longer available.
+_________________________________________________________________________
+
+Commentary by Stewart:
+
+I downloaded this mesh in 2005 with the intention of flying it in
+FightGear, instead of the ufo saucer. 
+
+The crude nature of this mesh, that Matt wrote about, seemed to overload
+the rendering engine. Too many vertices and too many faces that did not
+connect properly.
+
+It wasn't until late 2006 that I found the time and knowledge of how to
+clean up the mesh. I made a series of breakthroughs, in understanding the
+problem, and in learning the resources of Blender.
+
+I reduced the polygon count from 56009 to 18921 in my first series, before 
+figuring out that wasn't the only problem. So I went back to the original, 
+and cleaned it up without removing detail.
+
+After removing holes in the mesh, and faces that could not be seen from
+the outside, then adding animation appropriate to FlightGear, the polygon
+count is now lower. Still a huge model, but functional.
+_________________________________________________________________________
+
+The LCARS panels I added to the cockpit were obtained from 
+ http://www.utopiaplanitia.info/blueprints
+and are admittedly not the correct helm panels for the runabout, 
+but they look close enough.
+
+_________________________________________________________________________
+
+The replacement mesh for the nose hull, in part, came from
+ Thomas Slanitz who wrote:
+
+_________________________________________________________________________
+Date: 01.22.2002 
+Version: 1.1
+Created by Thomas Slanitz 
+e-mail: thomas@pcdome.hu 
+
+_________________________________________________________________________
+Credits:
+  Some sound files are by Michelle Pay (aerotro)
+    altitude-1.wav
+    altitude-0-loop.wav
+  Waldo Walker is by Detlef Faber
+_________________________________________________________________________
+
+PLEASE READ THIS !
+--------------------
+
+This model is freeware, you can use it free for personal entertainment. If you use this mesh please give credit for its creation to T.Slanitz. This mesh it is not to be used in commercial projects without my permission.
+Please include this text file with this model.
+
+Thank You and Enjoy !
+_________________________________________________________________________
+
+
+Stewart Andreason
+stewart <at> seahorseCorral <dot> org
+2009.Jun.29

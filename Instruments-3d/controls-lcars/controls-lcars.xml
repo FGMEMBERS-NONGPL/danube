@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!--== extracted from 4-panel controls        =====-->
+<!--== version 3.3 for  FlightGear 1.9 with OSG ====-->
+<!--===== integrated for  digital-trek-lcars  =====-->
+<!--===== Danube class Runabout  version 38.3 =====-->
+
+<PropertyList>
+
+ <path>controls-lcars.ac</path>
+
+ <animation>
+	<type>material</type>
+	<object-name>Arrow.Top</object-name>
+	<object-name>Arrow.Left</object-name>
+	<object-name>Arrow.Right</object-name>
+	<object-name>Arrow.Bottom</object-name>
+	<object-name>Controls.Face</object-name>
+	<emission>
+	<red>1</red>
+	<green>1</green>
+	<blue>1</blue>
+	<factor-prop>sim/model/material/instruments/factor</factor-prop>
+	</emission>
+ </animation>
+
+ <animation>
+	<type>translate</type>
+	<object-name>Arrow.Top</object-name>
+	<property>controls/flight/aileron</property>
+	<factor>0.0336</factor>
+	<axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>translate</type>
+	<object-name>Arrow.Bottom</object-name>
+	<property>controls/flight/rudder</property>
+	<factor>0.0336</factor>
+	<axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>translate</type>
+	<object-name>Arrow.Right</object-name>
+	<property>controls/flight/elevator</property>
+	<factor>0.026</factor>
+	<axis>
+	<x>0</x>
+	<y>0</y>
+	<z>1</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>translate</type>
+	<object-name>Arrow.Left</object-name>
+	<property>controls/flight/elevator-trim</property>
+	<factor>0.026</factor>
+	<axis>
+	<x>0</x>
+	<y>0</y>
+	<z>1</z>
+	</axis>
+ </animation>
+
+<!-- Integrate with Danube class Runabout -->
+
+ <animation>
+	<type>select</type>
+	<object-name>Arrow.Top</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>Arrow.Left</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>Arrow.Right</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>Arrow.Bottom</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>Controls.Face</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+</PropertyList>

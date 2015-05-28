@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--== Danube class Runabout  version 39.0 ==-->
+
+<PropertyList>
+
+<!-- side screen Left -->
+ <panel> 
+	<path>Aircraft/danube/Panels/tracking-text.xml</path>
+	<bottom-left>
+		<x-m>-13.104</x-m>
+		<y-m>-1.830</y-m>
+		<z-m>0.455</z-m>
+	</bottom-left>
+	<bottom-right>
+		<x-m>-13.461</x-m>
+		<y-m>-1.520</y-m>
+		<z-m>0.455</z-m>
+	</bottom-right>
+	<top-left>
+		<x-m>-13.104</x-m>
+		<y-m>-1.830</y-m>
+		<z-m>0.860</z-m>
+	</top-left>
+ </panel>
+
+<!-- side screen Right -->
+ <panel> 
+	<path>Aircraft/danube/Panels/tracking-text.xml</path>
+	<bottom-left>
+		<x-m>-13.412</x-m>
+		<y-m>1.555</y-m>
+		<z-m>0.455</z-m>
+	</bottom-left>
+	<bottom-right>
+		<x-m>-13.052</x-m>
+		<y-m>1.903</y-m>
+		<z-m>0.455</z-m>
+	</bottom-right>
+	<top-left>
+		<x-m>-13.412</x-m>
+		<y-m>1.555</y-m>
+		<z-m>0.859</z-m>
+	</top-left>
+ </panel>
+</PropertyList>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--== Danube class Runabout  version 39.0 ==-->
+
+<PropertyList>
+<!-- instrument panel must be declared separate to be top layer and rotate -->
+ <panel> 
+	<path>Aircraft/danube/Panels/track-callsigns.xml</path>
+	<bottom-left>
+		<x-m>-14.320</x-m>
+		<y-m>0.160</y-m>
+		<z-m>0.235</z-m>
+	</bottom-left>
+	<bottom-right>
+		<x-m>-14.320</x-m>
+		<y-m>0.25</y-m>
+		<z-m>0.235</z-m>
+	</bottom-right>
+	<top-left>
+		<x-m>-14.342</x-m>
+		<y-m>0.160</y-m>
+		<z-m>0.270</z-m>
+	</top-left>
+ </panel>
+
+ <panel> 
+	<path>Aircraft/danube/Panels/track-callsigns.xml</path>
+	<bottom-left>
+		<x-m>-14.320</x-m>
+		<y-m>-1.200</y-m>
+		<z-m>0.235</z-m>
+	</bottom-left>
+	<bottom-right>
+		<x-m>-14.320</x-m>
+		<y-m>-1.11</y-m>
+		<z-m>0.235</z-m>
+	</bottom-right>
+	<top-left>
+		<x-m>-14.342</x-m>
+		<y-m>-1.200</y-m>
+		<z-m>0.270</z-m>
+	</top-left>
+ </panel>
+</PropertyList>

@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<!--== modified property nodes for ufo flight model        ==-->
+<!--== integrated for Danube class Runabout version 2.34.1 ==-->
+
+<PropertyList>
+
+<!-- expect this model to be placed in the FG Aircraft directory, and
+		for the generic instruments, provided in base package, to be present. -->
+ <path>../../../Instruments-3d/ai/ai.ac</path>
+ <texture-path>../../../Instruments-3d/ai</texture-path>
+
+ <animation>
+	<type>material</type>
+	<object-name>Face</object-name>
+	<emission>
+	<red>1.0</red>
+	<green>1.0</green>
+	<blue>1.0</blue>
+	<factor-prop>sim/model/material/instruments/factor</factor-prop>
+	</emission>
+ </animation>
+
+ <animation>
+	<type>material</type>
+	<object-name>Pitch</object-name>
+	<emission>
+	<red>1.0</red>
+	<green>1.0</green>
+	<blue>1.0</blue>
+	<factor-prop>sim/model/material/instruments/factor</factor-prop>
+	</emission>
+ </animation>
+
+ <animation>
+	<type>material</type>
+	<object-name>Bezel</object-name>
+	<emission>
+	<red>1.0</red>
+	<green>1.0</green>
+	<blue>1.0</blue>
+	<factor-prop>sim/model/material/instruments/factor</factor-prop>
+	</emission>
+ </animation>
+
+ <animation>
+	<type>material</type>
+	<object-name>Ring</object-name>
+	<emission>
+	<red>1.0</red>
+	<green>1.0</green>
+	<blue>1.0</blue>
+	<factor-prop>sim/model/material/instruments/factor</factor-prop>
+	</emission>
+ </animation>
+
+ <animation>
+	<type>material</type>
+	<object-name>Front</object-name>
+	<emission>
+	<red>1.0</red>
+	<green>1.0</green>
+	<blue>1.0</blue>
+	<factor-prop>sim/model/material/instruments/factor</factor-prop>
+	</emission>
+ </animation>
+
+ <animation>
+	<name>PitchTranslation</name>
+	<type>translate</type>
+	<object-name>Pitch</object-name>
+	<property>orientation/pitch-deg</property>
+	<factor>-0.00035</factor>
+	<min-m>-0.01575</min-m>
+	<max-m>0.01575</max-m>
+	<axis>
+	<x>0.0</x>
+	<y>0.0</y>
+	<z>1.0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>rotate</type>
+	<object-name>Face</object-name>
+	<object-name>PitchTranslation</object-name>
+	<property>orientation/roll-deg</property>
+	<factor>-1</factor>
+	<axis>
+	<x>-1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
+ </animation>
+
+ <!-- 
+		This cannot be part of the same rotation as the others, or else
+		it screws up the alpha drawing order and hides the bezel.
+ -->
+ <animation>
+	<type>rotate</type>
+	<object-name>Ring</object-name>
+	<property>orientation/roll-deg</property>
+	<factor>-1</factor>
+	<axis>
+	<x>-1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
+ </animation>
+
+<!--  Integrate with Danube class Runabout  -->
+ <animation>
+	<type>select</type>
+	<object-name>Face</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>Pitch</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>Bezel</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>Ring</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>Front</object-name>
+	<condition>
+		<and>
+			<property>sim/model/danube/lighting/LCARS-panel</property>
+			<property>sim/model/danube/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+</PropertyList>

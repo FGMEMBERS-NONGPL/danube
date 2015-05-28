@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--== Danube class Runabout  version 41.4 ==-->
+<PropertyList>
+	<path>sphere-half.ac</path>
+	<animation>
+		<type>range</type>
+		<object-name>Sphere</object-name>
+		<min-m>0</min-m>
+		<max-m>30000</max-m>
+	</animation>
+
+	<animation>
+		<type>dist-scale</type>
+		<object-name>Sphere</object-name>
+		<interpolation>
+			<entry><ind>0</ind><dep>0.0001</dep></entry>
+			<entry><ind>50</ind><dep>0.0001</dep></entry>
+			<entry><ind>400</ind><dep>0.07</dep></entry>
+			<entry><ind>8000</ind><dep>1.1</dep></entry>
+			<entry><ind>16000</ind><dep>2</dep></entry>
+			<entry><ind>30000</ind><dep>5</dep></entry>
+		</interpolation>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>Sphere</object-name>
+		<ambient>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+		</ambient>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+		<specular>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</specular>
+	</animation>
+
+	<animation>
+		<type>scale</type>
+		<object-name>Sphere</object-name>
+		<property>/sim/current-view/field-of-view</property>
+		<x-factor>1.8</x-factor>
+		<y-factor>1.8</y-factor>
+		<z-factor>1.8</z-factor>
+		<x-offset>1</x-offset>
+		<y-offset>1</y-offset>
+		<z-offset>1</z-offset>
+	</animation>
+</PropertyList>
